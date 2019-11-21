@@ -24,7 +24,7 @@ export default function GlobalStyles() {
         h2 {
           font-family: "Ubuntu", sans-serif;
           text-align: center;
-          color: #ae47ad;
+          color: #4da641;
         }
       `}
     />
