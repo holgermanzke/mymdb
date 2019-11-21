@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "@emotion/styled";
 import search from "../assets/search.svg";
+import cancel from "../assets/cancel.svg";
 
 const SearchSubmitButton = styled.button`
   background: #2c6570;
@@ -9,6 +10,7 @@ const SearchSubmitButton = styled.button`
   flex-shrink: 0;
   outline: none;
   border: 0;
+  cursor: pointer;
 `;
 const Icon = styled.img`
   color: #eeeeee;
@@ -16,10 +18,10 @@ const Icon = styled.img`
   width: 30px;
 `;
 
-export default function SearchButton() {
+export default function SearchButton({ active, onClick }) {
   return (
-    <SearchSubmitButton>
-      <Icon src={search} />
+    <SearchSubmitButton onClick={onClick}>
+      <Icon src={active ? cancel : search} />
     </SearchSubmitButton>
   );
 }

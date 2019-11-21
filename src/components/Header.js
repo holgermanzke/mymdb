@@ -10,15 +10,19 @@ const AppBar = styled.header`
   height: 50px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 `;
 
 export default function Header() {
+  const [showSearch, setShowSearch] = React.useState(false);
   return (
     <AppBar>
-      <Logo text="My Movie Database" />
-      <SearchBar />
-      <SearchButton />
+      {!showSearch && <Logo text="My Movie Database" />}
+      {showSearch && <SearchBar />}
+      <SearchButton
+        active={showSearch}
+        onClick={() => setShowSearch(!showSearch)}
+      />
     </AppBar>
   );
 }
