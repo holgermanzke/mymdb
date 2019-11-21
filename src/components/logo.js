@@ -7,6 +7,8 @@ const Title = styled.h1`
   text-align: center;
   color: #eeeeee;
   letter-spacing: 2px;
+  font-size: 1.8rem;
+  padding: 0 10px;
 `;
 
 export default function Logo({ text }) {
