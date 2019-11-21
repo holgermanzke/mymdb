@@ -20,12 +20,6 @@ export default function GlobalStyles() {
           font-family: "News Cycle", sans-serif;
           color: white;
         }
-        h1,
-        h2 {
-          font-family: "Ubuntu", sans-serif;
-          text-align: center;
-          color: #4da641;
-        }
       `}
     />
   );
