@@ -1,14 +1,18 @@
 import React from "react";
 import GlobalStyles from "./components/GlobalStyles";
-import Header from "./components/Header";
+import MovieList from "./components/MovieList";
+// import Header from "./components/Header";
 
 function App() {
   return (
     <>
       <GlobalStyles />
 
-      <Header />
-      <main>movies</main>
+      <h1>MyMDb</h1>
+      <header />
+      <main>
+        <MovieList />
+      </main>
     </>
   );
 }
