@@ -1,13 +1,14 @@
 import React from "react";
 import GlobalStyles from "./components/GlobalStyles";
+import Header from "./components/Header";
 
 function App() {
   return (
     <>
       <GlobalStyles />
-      <h1>MyMDb</h1>
-      <header>Logo, Search, IconButto</header>
-      <main>movie</main>
+
+      <Header />
+      <main>movies</main>
     </>
   );
 }
