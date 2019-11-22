@@ -1,7 +1,7 @@
 import React from "react";
 import GlobalStyles from "./components/GlobalStyles";
 import MovieList from "./components/MovieList";
-// import Header from "./components/Header";
+import Header from "./components/Header";
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <GlobalStyles />
 
       <h1>MyMDb</h1>
-      <header />
+      <Header />
       <main>
         <MovieList />
       </main>
