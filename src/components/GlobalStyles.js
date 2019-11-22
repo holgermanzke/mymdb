@@ -15,16 +15,12 @@ export default function GlobalStyles() {
           background: #2b2758;
           font-family: "News Cycle", sans-serif;
           color: white;
+          height: 100vh;
+          width: 100vw;
         }
         p {
           font-family: "News Cycle", sans-serif;
           color: white;
-        }
-        h1,
-        h2 {
-          font-family: "Ubuntu", sans-serif;
-          text-align: center;
-          color: #4da641;
         }
       `}
     />
