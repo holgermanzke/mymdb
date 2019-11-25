@@ -1,11 +1,11 @@
 import React from "react";
 import { searchMovies } from "../api/movies";
 
-export default function MovieList() {
+export default function MovieList({ searchValue }) {
   const [movies, setMovies] = React.useState([]);
 
   async function refreshMovies() {
-    const discoveredMovies = await searchMovies("pokem");
+    const discoveredMovies = await searchMovies(searchValue);
     setMovies(discoveredMovies);
     return movies;
   }

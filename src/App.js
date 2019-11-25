@@ -4,6 +4,7 @@ import MovieList from "./components/MovieList";
 import Header from "./components/Header";
 
 function App() {
+  const [searchValue, setSearchValue] = React.useState("franz");
   return (
     <>
       <GlobalStyles />
@@ -11,7 +12,7 @@ function App() {
       <h1>MyMDb</h1>
       <Header />
       <main>
-        <MovieList />
+        <MovieList searchValue={searchValue} />
       </main>
     </>
   );
