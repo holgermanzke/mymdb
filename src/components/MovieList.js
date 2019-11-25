@@ -11,6 +11,7 @@ export default function MovieList() {
   }
   React.useEffect(() => {
     refreshMovies();
+    // eslint-disable-next-line
   }, []);
   return (
     <div>
