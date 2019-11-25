@@ -1,11 +1,11 @@
 import React from "react";
-import { getDiscoverMovies } from "../api/movies";
+import { searchMovies } from "../api/movies";
 
 export default function MovieList() {
   const [movies, setMovies] = React.useState([]);
 
   async function refreshMovies() {
-    const discoveredMovies = await getDiscoverMovies();
+    const discoveredMovies = await searchMovies("pokem");
     setMovies(discoveredMovies);
     return movies;
   }
